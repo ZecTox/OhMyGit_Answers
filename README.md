@@ -53,3 +53,53 @@ rm *web
 touch chair bed
 # Write yellow in both files and save
 ```
+
+# 3. branches
+## 3.1) Moving through Time
+```
+git checkout 0ae4e768ddf2b27f7b65471b3f1b2c504d50eea3
+# Add 10 coins in  piggy_bank.txt
+git add .
+git commit -m "Added 10 Coins"
+```
+## 3.2) Make Parallel Commits
+```
+git checkout HEAD~2
+# Add text Child is happy in cage/child and Add text Lion eat Lollipop or something else in  cage/lion
+git add .
+git commit -m "Done changes"
+```
+## 3.3) Creating Branches
+```
+git branch -f birthday 0ee310f9a1612079377ca5156888fa35b848a9a6
+git branch -f concert 6412f2b19a4c97b29780ac6889ee2ff4910a9484
+```
+## 3.4) Branches grow with you!
+```
+git checkout e5cbb3ef4ecc5642431a2e39e818ce67c6891793
+# Make changes to you.txt
+git add you
+git commit -m "Changes done in you"
+git checkout concert
+# Make changes in you.txt
+git add you
+git commit -m "Changes done in you
+```
+## 3.5) Deleting the Branches
+```
+git checkout 8b698d2fd41693dfef7f6942588c1458ef65ce40
+git checkout 06ae81bc3acdaff7f2d8797e599d9b2c73620874
+git checkout 670bce20cf0f059ae042b92c1a0a0881192b40d8 # Correct Branch
+git checkout 7876691fe99b6645b37ae41c4d3ac1f1cdb5e0e7
+git branch -D music ice-cream friend
+```
+## 3.6) Moving branches arounnd
+```
+git checkout 581d19075bf4e16695e9987b291e7579e6610b11
+git branch -f coffee ecf5c44fdc25087ca9243855ef559ad543d972a9
+git branch -f baguette 6ab8db489344e7130e1f027f567c5d0171ce3f9f
+git checkout e99ce9ac2a9a120f7588a96965e9434373e1f62f
+git add .
+git commit -m "you ate a donut"
+git branch -f donut 6e9ec3cfa103df50ebb5e0586e0ef87161e41d78
+```
