@@ -103,3 +103,16 @@ git add .
 git commit -m "you ate a donut"
 git branch -f donut 6e9ec3cfa103df50ebb5e0586e0ef87161e41d78
 ```
+# 4. Merge
+## 4.1) Merging Timelines
+```
+git merge bda7e769b85dc92dc45205e0ed94845c2e12a3db
+git merge d63959cd3286972202c0b8e98514de15fcb0919d
+```
+## 4.2) Contradictions
+```
+git reset --hard muesli
+git merge pancakes
+git add .
+git commit -m "compromise"
+```
