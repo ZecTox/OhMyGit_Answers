@@ -2,7 +2,7 @@
 
 This repo has my answers of Oh My Git Game - An open source game about learning Git!
 
-If you also want to play the game then follow the [LINK](https://ohmygit.org/)
+If you also want to play the game then follow the [LINK](https://ohmygit.org/), download it and play it. <br> Also I find one website where you can refer to the answers [LINK](https://pierrejean.wp.imt.fr/2023/09/08/oh-my-git/).
 
 >[!NOTE]
 > The explanations of the problems in the game can sometimes be confusing, and at times, they don't provide enough clarity. Please stay calm and make an effort to solve them ;)
@@ -28,7 +28,7 @@ git init
 ```
 git add glass
 git commit -m "first commit"
-#Change the contents of the file
+# Change the contents of the file
 git add glass
 git commit -m "second commit"
 ```
@@ -39,4 +39,17 @@ git pull
 git add students
 git commit -m "Added my name"
 git push
+```
+
+# 2. Files
+## 2.1) Unexpected Roommates
+```
+rm big_web thick_web tiny_web
+          OR
+rm *web
+```
+## 2.2) Interior Design
+```
+touch chair bed
+# Write yellow in both files and save
 ```
