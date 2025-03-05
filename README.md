@@ -226,3 +226,43 @@ git add .
 git commit -m "solved the sum"
 git tag pr
 ```
+# 10. Bisect
+## 10.1) Yellow Brick Road
+```
+git bisect start
+git bisect bad (for commit 30)
+git checkout 554817e3d5b4240fe5a682fd6ef276a12c72a248(commitID of 1)
+git bisect good (for commit 1) (now HEAD at 15)
+git bisect bad (we dont have key at commit 15) (now HEAD at 8)
+git bisect good (we have key) (now HEAD at 11)
+git bisect good (we still have key) (now HEAD at 13)
+git bisect bad (now we dont have key) (now HEAD at 12)
+git checkout HEAD^ (HEAD now at 11) (Good Branch - Before losing key)
+git reset --hard fa2a07aa349bace9c44826abbc9cc7a4562c6143 (Checkout HEAD with main branch to commit 11)
+```
+# 11. Stash
+## 11.1) Stashing
+```
+git stash push
+```
+## 11.2) Pop from Stash
+```
+git stash pop
+```
+## 11.3) Clear from Stash
+```
+git stash list (Optional) (Used to see the list of stash)
+git stash clear
+```
+## 11.4) Branch from Stash
+```
+git stash branch newbranch 61b2b56b1faa133fca973fde6ce517fa10d52143 (commitID of refs/stash)
+```
+## 11.5)  Merging Popped Stash
+```
+git stash pop
+# Remove the conflicts from the file
+git add recipe
+git commit -m "done"
+git stash clear
+```
