@@ -216,4 +216,13 @@ git push
 git reflog
 git checkout 3e1edcb04b3ffdf466fb278075b207619e71cb07(commitID of 3)
 ```
-
+# 9. Workflows
+## 9.1) Workflows
+```
+git clone ../friend .
+git checkout -b solution
+# Solved the sum in file.txt
+git add .
+git commit -m "solved the sum"
+git tag pr
+```
