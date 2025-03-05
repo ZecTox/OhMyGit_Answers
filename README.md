@@ -150,3 +150,28 @@ git commit -m "added hammer"
 git add sugar_cane
 git commit -m "added sugar_cane" 
 ```
+# 6. Remotes
+## 6.1) Friend
+```
+git pull
+# Add line 3 in essay file
+git add essay
+git commmit -m "added Line 3"
+git push
+git pull
+# Added line 5 in essay file
+git add essay
+git commit -m "added Line 5"
+git push 
+```
+## 6.2) Problems
+```
+git add .
+git commit -m "step1"
+git pull
+# Here automatic merge gets conflicts, we will have to fix the conflicts by removing the unnecessary things which are commitIDs, <<.. ==..., >>..., etc
+git add .
+git commit -m "done"
+git push
+```
+
