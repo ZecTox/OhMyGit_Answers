@@ -116,3 +116,37 @@ git merge pancakes
 git add .
 git commit -m "compromise"
 ```
+# 5. Index
+## 5.1) Step by Step
+```
+git checkout step-by-step
+# Add text alarm goes off in smoke_detector.txt
+git add .
+git commit -m "alarm goes off"
+```
+## 5.2) Add New Files to the Index
+```
+git add candle
+git commit -m "added new file"
+```
+## 5.3) Update Files in Index
+```
+# Do some changes in the candle.txt file
+git add candle
+git git commit -m "did changes in candle"
+```
+## 5.4) Resetting files in the Index
+```
+git reset blue_candle green_candle
+git commit -m "done"
+```
+### 5.5) Adding Changes step by step
+```
+# Do some changes in all the files
+git add bottle
+git commit -m "added bottle"
+git add hammer
+git commit -m "added hammer"
+git add sugar_cane
+git commit -m "added sugar_cane" 
+```
