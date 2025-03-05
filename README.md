@@ -285,8 +285,8 @@ git pull (to pull tag v1)
 git tag v2
 git push friend v2 /OR/ git push friend --tags (to push all tags from our repository)
 ```
-** Info for tags **
-You can push a tag with - git push <remote> tag
-You can push all tags with - git push <remote> --tags
-Deleting tags on your remote works with - git push <remote> --delete <tag-name>
-You can also sync - git fetch <remote> --prune --prune-tags
+** Info for tags **           <br>
+You can push a tag with - git push <remote> tag          <br>
+You can push all tags with - git push <remote> --tags          <br>
+Deleting tags on your remote works with - git push <remote> --delete <tag-name>          <br>
+You can also sync - git fetch <remote> --prune --prune-tags          <br>
