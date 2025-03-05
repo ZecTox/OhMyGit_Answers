@@ -174,4 +174,19 @@ git add .
 git commit -m "done"
 git push
 ```
+# 7. Changing the Past
+## 7.1) Rebasing
+```
+git branch -f main baguette
+git checkout main
+git rebase coffee
+git rebase donut
+```
+## 7.2) Reordering Events
+```
+git checkout 7b6429d3fb87399a9828a441ef8b917d16d93116
+git cherry-pick 1320361bcbc0d31cc93ef17fa68a11950e303aae (CommitID of Underwear) 405c0120dffa48218ed26c49ae16402b3d02b95c(CommitID of Pants) b5279dde5771630a4a2d81b41d9d97acebe5cc91(CommitID of Tshirt) 97063275f1031c3b5875dbc484c29aa31184dab4(CommitID of shoes)
+git branch -f main 8dfd7d236d0f6751b014d0cb078c4500fe750f62(commitID of shoes)
+```
+
 
