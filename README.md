@@ -188,5 +188,32 @@ git checkout 7b6429d3fb87399a9828a441ef8b917d16d93116
 git cherry-pick 1320361bcbc0d31cc93ef17fa68a11950e303aae (CommitID of Underwear) 405c0120dffa48218ed26c49ae16402b3d02b95c(CommitID of Pants) b5279dde5771630a4a2d81b41d9d97acebe5cc91(CommitID of Tshirt) 97063275f1031c3b5875dbc484c29aa31184dab4(CommitID of shoes)
 git branch -f main 8dfd7d236d0f6751b014d0cb078c4500fe750f62(commitID of shoes)
 ```
-
+# 8. Shit Happens
+## 8.1) Restore a deleted file
+```
+git checkout 060b45adf24c5ea50168191e907a5a96a128ed2b(commitID of Initial Branch)
+# Write content after important in essay file
+```
+## 8.2) Restore a file from the Past
+```
+git checkout fd81431958152be7996c52fd03333603a5421a7d(commitID of Initial Commit) essay
+git add .
+git commit -m "good file"
+```
+## 8.3) Undo a Bad Commit
+```
+git checkout 26cd0920165542a78bcf31c9dc638f7fdf05592c(commitID of Initial Commit) numbers
+git add .
+git commit -m "More numbers"
+```
+## 8.4) I Pushed Something Broken
+```
+git revert 0ce98e9d44643877ab98509e86ea4fc9b956b488(commitID of very bad commit)
+git push
+```
+## 8.5) Go back to Where you were before
+```
+git reflog
+git checkout 3e1edcb04b3ffdf466fb278075b207619e71cb07(commitID of 3)
+```
 
