@@ -266,3 +266,27 @@ git add recipe
 git commit -m "done"
 git stash clear
 ```
+# 12. Tags
+## 12.1) Creating Tags
+```
+git tag v1
+```
+## 12.2) Removing Tags
+```
+git tag -d v1 v2 v3
+```
+### 12.3) Tagging Later
+```
+git tag v1 2fa7519e7ff07faa54a3f55765ba24e53be0d669(commitID of Adding Feature 2)
+```
+## 12.4) Remote Tags
+```
+git pull (to pull tag v1)
+git tag v2
+git push friend v2 /OR/ git push friend --tags (to push all tags from our repository)
+```
+** Info for tags **
+You can push a tag with - git push <remote> tag
+You can push all tags with - git push <remote> --tags
+Deleting tags on your remote works with - git push <remote> --delete <tag-name>
+You can also sync - git fetch <remote> --prune --prune-tags
